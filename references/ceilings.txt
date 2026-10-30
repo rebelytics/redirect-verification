@@ -1,0 +1,7 @@
+# Line ceilings for the reference files, read by scripts/validate-skill-bundle.py.
+# One line per file: <file.md> <ceiling> [<YYYY-MM-DD> <reason for the last raise>]
+# Over its ceiling, a file with more than 12 load triggers is split by episode;
+# one with 12 or fewer is trimmed, or its ceiling raised with a dated reason.
+# A ceiling more than 3 lines above its file's count is lowered to the count.
+crawl-pipeline.md 112
+variants-and-residue.md 86 added the review of a fuzzy-matched mapping before hand-over and the new-domain redirect check
