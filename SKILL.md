@@ -1,6 +1,6 @@
 ---
 name: redirect-verification
-version: 1.1.0
+version: 1.1.1
 core_max_lines: 164
 description: Post-completion verification of a reported fix against its spec — establishing what is actually live and how it differs from what was requested. Redirects are the canonical case, cross-referenced against crawl data (e.g. a Screaming Frog "All Redirects" export) on destination, status code, chain depth and old-rule removal; the same discipline covers internal-link fix tickets, host migrations and bulk redirect jobs, which need targeted live requests rather than a crawl. Load this skill when the user mentions redirect verification, checking whether an implementation matches the spec, Screaming Frog redirects, redirect chain analysis, 301 vs 302 verification, "did the dev team implement this correctly", verifying a migration or job log against live state, a pre-switch check of a redirect mapping, or ticket QA after a fix is reported complete.
 license: CC-BY-4.0
@@ -58,7 +58,7 @@ Each pointer names its trigger. These loads are mandatory steps: when an episode
 
 ## Shared verification rules
 
-Four rules sit underneath every verification of a claim against live state, whatever the subject — redirects, structured data, translations, breadcrumbs, hreflang. The sibling audit skills point here instead of carrying their own copies, and each keeps only its own instance: what the population is, what counts as residue, which verdicts the gate guards. Change a rule here, never in a sibling.
+Four rules sit underneath every verification of a claim against live state, whatever the subject — redirects, structured data, translations, breadcrumbs, hreflang. The sibling audit skills point here instead of carrying their own copies — among them the published open-source companion translation-audit (https://github.com/rebelytics/translation-audit) — and each keeps only its own instance: what the population is, what counts as residue, which verdicts the gate guards. Change a rule here, never in a sibling.
 
 ### Rule 1 — The deployment gate: whether it shipped, then when
 
