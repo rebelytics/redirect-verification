@@ -2,6 +2,8 @@
 
 Open-source skill for **post-completion verification of a reported fix against its spec** — establishing what is actually live and how it differs from what was requested. Redirects are the canonical case, checked against crawl data on destination, status code, chain depth and old-rule removal; the same discipline covers internal-link fix tickets, host migrations and bulk redirect jobs. Load it into any MCP-capable AI agent (Claude, Cursor, Codex, n8n, etc.).
 
+Part of the [Open Skill Library](https://github.com/rebelytics/one-skill-to-rule-them-all/blob/main/OPEN-SKILL-LIBRARY.md), the open-source agent skills maintained with Task Observer.
+
 ## When it triggers
 
 Redirect verification, checking whether an implementation matches the spec, Screaming Frog redirects, redirect chain analysis, 301 vs 302 verification, "did the dev team implement this correctly", verifying a migration or job log against live state, a pre-switch check of a redirect mapping, or ticket QA after a fix is reported complete.
