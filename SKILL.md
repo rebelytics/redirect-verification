@@ -1,12 +1,12 @@
 ---
 name: redirect-verification
-version: 1.1.1
-core_max_lines: 164
 description: Post-completion verification of a reported fix against its spec — establishing what is actually live and how it differs from what was requested. Redirects are the canonical case, cross-referenced against crawl data (e.g. a Screaming Frog "All Redirects" export) on destination, status code, chain depth and old-rule removal; the same discipline covers internal-link fix tickets, host migrations and bulk redirect jobs, which need targeted live requests rather than a crawl. Load this skill when the user mentions redirect verification, checking whether an implementation matches the spec, Screaming Frog redirects, redirect chain analysis, 301 vs 302 verification, "did the dev team implement this correctly", verifying a migration or job log against live state, a pre-switch check of a redirect mapping, or ticket QA after a fix is reported complete.
 license: CC-BY-4.0
 metadata:
   author: Eoghan Henn and contributors
   source: https://github.com/rebelytics/redirect-verification
+  version: "1.1.2"
+  core_max_lines: "164"
 ---
 
 # Redirect Verification
